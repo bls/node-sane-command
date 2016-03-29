@@ -29,7 +29,7 @@ export function cmd(cmd: string[], options?: CmdOptions): Promise<string> {
         shellEscape: true,
         maxBuffer: DEFAULT_MAX_BUFFER
     };
-    options = <CmdOptions> Object.assign({}, defaultOptions, options);
+    options = Object.assign({}, defaultOptions, options);
     let cmdStr = options.shellEscape ? shellescape(cmd) : cmd.join(' ');
     return new Promise<string>((resolve, reject) => {
         /* tslint:disable:no-unused-variable */
