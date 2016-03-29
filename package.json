@@ -1,0 +1,38 @@
+{
+  "name": "@sane/command",
+  "version": "1.0.0",
+  "description": "Promisified api for shell commands and simple daemons",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "prepublish": "tslint src/*.ts && tsc",
+    "test": "mocha dist/test.js"
+  },
+  "files": [
+    "dist/index.js",
+    "dist/index.d.ts"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bls/node-sane-command.git"
+  },
+  "keywords": [
+    "command",
+    "daemon"
+  ],
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "author": "Blair Strang <blair.strang@gmail.com>",
+  "homepage": "https://github.com/bls/node-sane-command",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^2.2.4",
+    "tslint": "^3.2.1",
+    "typescript": "^1.7.5"
+  },
+  "dependencies": {
+    "@sane/service": "^1.0.0",
+    "shell-escape": "^0.2.0"
+  }
+}
