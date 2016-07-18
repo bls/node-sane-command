@@ -13,7 +13,7 @@ Example
 -------
 
 ```javascript
-import { cmd, Daemon } from '@sane/service';
+import { cmd, Daemon } from '@sane/command';
 
 async function main() {
   let repoUrl = 'https://github.com/bls/node-sane-command.git'
